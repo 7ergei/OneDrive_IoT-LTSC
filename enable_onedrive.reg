@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Created by: Sergei T.
+; Created on: 29-Jul 2023
+; Purpose: Enabling OneDrive for memstechtips IoT-LTSC-Like version script.
+; Source: https://github.com/memstechtips/UnattendedWinstall
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\OneDrive]
+"KFMBlockOptIn"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy]
+"SettingSyncEnabled"=dword:00000001
+
